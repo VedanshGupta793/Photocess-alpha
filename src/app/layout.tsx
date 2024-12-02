@@ -5,6 +5,7 @@ import FloatingActionButton from "@/components/custom/support/FloatingActionButt
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import ClientSessionProvider from "@/provider/ClientSessionProvider";
 import ReduxProvider from "@/provider/ReduxProvider";
+import GetAuth from "@/function/GetAuth";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({
               {children}
             </ThemeProvider>
             <FloatingActionButton />
+            <GetAuth />
           </ReduxProvider>
         </ClientSessionProvider>
       </body>
