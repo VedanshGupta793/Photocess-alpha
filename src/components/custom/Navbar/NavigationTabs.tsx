@@ -37,10 +37,12 @@ const components: { title: string; href: string; description: string }[] = [
     },
 ]
 
-export function NavigationTabs() {
+export function NavigationTabs(
+    { className }: { className?: string } = { className: "" }
+) {
     return (
-        <NavigationMenu>
-            <NavigationMenuList>
+        <NavigationMenu >
+            <NavigationMenuList className={className}>
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                     <NavigationMenuContent>
