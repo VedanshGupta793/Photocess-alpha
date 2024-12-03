@@ -121,7 +121,7 @@ export function SignInForm() {
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" className="bg-white hover:bg-white/80">Submit</Button>
                     </form>
                 </Form>
             </CardContent>
